@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the boiled one</title>
+
     <style>
         body {
             width: 1000px;
@@ -120,137 +121,193 @@
 
         .terror {
             width: 100%;
+        }
 
+        /* container responsivo */
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* REMOVIDO: div { display:flex } pois quebrava tudo */
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 900px) {
+
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav,
+            main,
+            aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img {
+                float: none;
+                display: block;
+                margin: auto;
+                padding: 10px 0;
+            }
+
+            figure img {
+                width: 60%;
+                display: block;
+                margin: auto;
+                padding-bottom: 10px;
+            }
+
+            p img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red;
+            }
+
+            figure img {
+                width: 90%;
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
-    <header>
-        <figure>
-            <img src="Mídia (1).jpg" alt="">
-            <img src="Mídia (2).jpg" alt="">
-            <img src="Mjk (4).jpg" alt="">
-        </figure>
-        <h1>𝑻𝑯𝑬 𝑩𝑶𝑰𝑳𝑬𝑫 𝑶𝑵𝑬</h1>
-    </header>
 
-    <nav>
-        <ul>
-           <link rel="stylesheet" href="">
+    <div class="container">
 
-        </ul>
-    </nav>
-    <main>
-        <h1>um pouco de "o cozido"</h1>
-        <p>O Cozido , também classificado como PHEN-228 , é o principal antagonista do vídeo de terror analógico de
-            2024, THE BOILED ONE PHENOMENON .
+        <header>
+            <figure>
+                <img src="Mídia (1).jpg" alt="">
+                <img src="Mídia (2).jpg" alt="">
+                <img src="Mjk (4).jpg" alt="">
+            </figure>
+            <h1>𝑻𝑯𝑬 𝑩𝑶𝑰𝑳𝑬𝑫 𝑶𝑵𝑬</h1>
+        </header>
 
-            Ele é uma entidade misteriosa, cognitivamente perigosa e demoníaca que detém uma profecia sombria. Para
-            espalhar sua mensagem perigosa, ele sequestra emissoras de televisão, o que causa um aumento massivo de
-            casos de síndrome do encarceramento/pseudocoma .
+        <nav>
+            <ul>
+                <link rel="stylesheet" href="">
+            </ul>
+        </nav>
 
-            Ele foi dublado pelo criador do vídeo, Doctor Nowhere (Silas Orion).</p>
-        <img class="terror" src="Mídia (7).jpg" alt="detalhe interno">
-    </main>
-    <aside>
-        <article>
-            
-            <h2>alguns de seus nome</h2>
+        <main>
+            <h1>um pouco de "o cozido"</h1>
+            <p>O Cozido , também classificado como PHEN-228 , é o principal antagonista do vídeo de terror analógico de
+                2024, THE BOILED ONE PHENOMENON .
 
-            <p>
-                PHEN-228
-                O Cozido
-                ID de Perigo-556
-                Cacto de Carne da Pensilvânia
-                Árvore de Carne do Nordeste Árvore
-                do Inferno
-                Sumagre de Carne
-                Cognitohazard-id(028)
+                Ele é uma entidade misteriosa, cognitivamente perigosa e demoníaca que detém uma profecia sombria. Para
+                espalhar sua mensagem perigosa, ele sequestra emissoras de televisão, o que causa um aumento massivo de
+                casos de síndrome do encarceramento/pseudocoma .
 
-            </p>
-        </article>
-        <article>
-            <h2>seus podere/habilidades</h2>
+                Ele foi dublado pelo criador do vídeo, Doctor Nowhere (Silas Orion).</p>
 
-            
-                <body>
-    <button onclick="mostrar()">mostrar mais</button>
-    <button  onclick="esconder()">mostar menos</button>
-    <p id="texto" style="display: none;">Omnimalevolência
-                Alta inteligência
-                Metodologia de tortura
-                Multilinguismo
-                Tecnocinese (manipulação de tecnologia)
-                Multipresença
-                Indução de pseudocoma
-                Mentocinese (manipulação da mente)
-                Manipulação da percepção
-                Audiocinese (manipulação do som)
-                Quirografocinese (manipulação da escrita)
-                Datacinese (manipulação de código)
-                Fobocinese (manipulação do medo)
-                Megetocinese (manipulação do tamanho)
-                Hematocinese (manipulação do sangue)
-                Criação de portais
-                Invisibilidade seletiva
-                Boca volumétrica</p>
-    <script>
-        function mostrar() {
-            document.getElementById("texto").style.display = "block"
-        }
-        function esconder() {
-            document.getElementById("texto").style.display = "none";
-        }
-    </script>
-</body>
-                
-            
-        </article>
-        <article>
-            <h2>metas</h2>
+            <img class="terror" src="Mídia (7).jpg" alt="detalhe interno">
+        </main>
 
-            <p>Faça com que qualquer pessoa que o testemunhe entre em estado de encarceramento.
-                Manifestar-se e alimentar-se da dor de suas vítimas.
-                Assombrar e atormentar Job Zamperini até o dia de sua morte.
-                Espalhar sua mensagem apocalíptica
-                
-            </p>
-        </article>
-        <article>
-            <h2>crimes</h2>
+        <aside>
+            <article>
+                <h2>alguns de seus nome</h2>
+                <p>
+                    PHEN-228
+                    O Cozido
+                    ID de Perigo-556
+                    Cacto de Carne da Pensilvânia
+                    Árvore de Carne do Nordeste Árvore
+                    do Inferno
+                    Sumagre de Carne
+                    Cognitohazard-id(028)
+                </p>
+            </article>
 
-            <p>
-                Tortura em massa (física e psicológica)
-                Perseguição
-                , invasão de
-                propriedade, abuso
-                , tentativa de genocídio,
-                intrusão em transmissões,
-                conspiração.
-                <a href=""></a>
-            </p>
+            <article>
+                <h2>seus podere/habilidades</h2>
 
-        </article>
-         <article>
-            <h2>tipo</h2>
+                <button onclick="mostrar()">mostrar mais</button>
+                <button onclick="esconder()">mostar menos</button>
 
-            <p>
-                Presságio de Quebra-Mentes
-                <a href=""></a>
-            </p>
+                <p id="texto" style="display: none;">Omnimalevolência
+                    Alta inteligência
+                    Metodologia de tortura
+                    Multilinguismo
+                    Tecnocinese (manipulação de tecnologia)
+                    Multipresença
+                    Indução de pseudocoma
+                    Mentocinese (manipulação da mente)
+                    Manipulação da percepção
+                    Audiocinese (manipulação do som)
+                    Quirografocinese (manipulação da escrita)
+                    Datacinese (manipulação de código)
+                    Fobocinese (manipulação do medo)
+                    Megetocinese (manipulação do tamanho)
+                    Hematocinese (manipulação do sangue)
+                    Criação de portais
+                    Invisibilidade seletiva
+                    Boca volumétrica</p>
 
-        </article>
-    </aside>
-    <footer>
-        <p>𝑻𝑯𝑬 𝑩𝑶𝑰𝑳𝑬𝑫 𝑶𝑵𝑬</p>
-    </footer>
-<button style="background-color: red;">
+                <script>
+                    function mostrar() {
+                        document.getElementById("texto").style.display = "block"
+                    }
+                    function esconder() {
+                        document.getElementById("texto").style.display = "none";
+                    }
+                </script>
+            </article>
+
+            <article>
+                <h2>metas</h2>
+                <p>
+                    Faça com que qualquer pessoa que o testemunhe entre em estado de encarceramento.
+                    Manifestar-se e alimentar-se da dor de suas vítimas.
+                    Assombrar e atormentar Job Zamperini até o dia de sua morte.
+                    Espalhar sua mensagem apocalíptica
+                </p>
+            </article>
+
+            <article>
+                <h2>crimes</h2>
+                <p>
+                    Tortura em massa (física e psicológica)
+                    Perseguição,
+                    invasão de propriedade,
+                    abuso,
+                    tentativa de genocídio,
+                    intrusão em transmissões,
+                    conspiração.
+                </p>
+            </article>
+
+            <article>
+                <h2>tipo</h2>
+                <p>
+                    Presságio de Quebra-Mentes
+                </p>
+            </article>
+        </aside>
+
+        <footer>
+            <p>𝑻𝑯𝑬 𝑩𝑶𝑰𝑳𝑬𝑫 𝑶𝑵𝑬</p>
+        </footer>
+
+        <button style="background-color: red;">
             <a href="menu.html" style="text-decoration: none;">voltar</a>
         </button>
+
+    </div>
 
 </body>
 

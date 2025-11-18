@@ -120,19 +120,64 @@
 
         .terror {
             width: 100%;
+        }
 
+
+
+        /* ------------------------- */
+        /*   RESPONSIVIDADE AQUI     */
+        /* ------------------------- */
+
+        @media (max-width: 900px) {
+
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav,
+            main,
+            aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img {
+                float: none;
+                display: block;
+                margin: auto;
+                padding: 10px 0;
+            }
+
+            figure img {
+                width: 60%;
+            }
+
+            p img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red;
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
     <header>
         <figure>
             <img src="Mídia (15).jpg" alt="">
-
         </figure>
         <h1>𝑺𝑴𝑰𝑳𝑬 𝑫𝑶𝑮</h1>
     </header>
@@ -140,9 +185,9 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "smile dog"</h1>
         <p>O Smile Dog é o principal antagonista da famosa Creepypasta Smile.jpg .
@@ -151,9 +196,9 @@
             e ao suicídio.</p>
         <img class="terror" src="Mídia (16).jpg" alt="detalhe interno">
     </main>
+
     <aside>
         <article>
-
             <h2>alguns de seus nome</h2>
 
             <p>
@@ -163,50 +208,46 @@
                 Satan
                 smile.avi
                 smiledog.jpg
-
             </p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
 
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostar menos</button>
 
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Onimalevolência
-                    Indução à loucura,
-                    indução ao suicídio,
-                    indução ao medo
-                    , teletransporte,
-                    manipulação de sonhos/pesadelos,
-                    poderes demoníacos,
-                    manipulação psicológica,
-                    viagem dimensional,
-                    metamorfose,
-                    garras e dentes afiados.</p>
-                <script>
-                    function mostrar() {
-                        document.getElementById("texto").style.display = "block"
-                    }
-                    function esconder() {
-                        document.getElementById("texto").style.display = "none";
-                    }
-                </script>
-            </body>
+            <p id="texto" style="display: none;">Onimalevolência
+                Indução à loucura,
+                indução ao suicídio,
+                indução ao medo
+                , teletransporte,
+                manipulação de sonhos/pesadelos,
+                poderes demoníacos,
+                manipulação psicológica,
+                viagem dimensional,
+                metamorfose,
+                garras e dentes afiados.</p>
 
-
+            <script>
+                function mostrar() {
+                    document.getElementById("texto").style.display = "block"
+                }
+                function esconder() {
+                    document.getElementById("texto").style.display = "none";
+                }
+            </script>
         </article>
+
         <article>
             <h2>metas</h2>
-
             <p>Divulgue sua imagem pelo mundo todo.
                 Causar o máximo de sofrimento e morte possível (ambos contínuos) .
-                
             </p>
         </article>
+
         <article>
             <h2>crimes</h2>
-
             <p>
                 Chantagem
                 Assassinato em massa,
@@ -217,24 +258,24 @@
                 , tentativa de onicídio (possivelmente)
                 <a href=""></a>
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
             <p>
-               Destruidor de Mentes Demoníaco
+                Destruidor de Mentes Demoníaco
                 <a href=""></a>
             </p>
-
         </article>
     </aside>
+
     <footer>
         <p>𝑺𝑴𝑰𝑳𝑬 𝑫𝑶𝑮</p>
     </footer>
-<button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+
+    <button style="background-color: red;">
+        <a href="menu.html" style="text-decoration: none;">voltar</a>
+    </button>
 
 </body>
 

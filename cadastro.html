@@ -59,6 +59,86 @@
     input[type="submit"] {
         width: 240px;
     }
+    .container {
+  width: 90%;
+}
+ 
+@media (max-width: 600px) {
+  body {
+    background: red;
+  }
+}
+ 
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+ /* RESPONSIVIDADE — sem modificar nada do que você fez */
+@media (max-width: 900px) {
+
+    body {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 150px !important;
+        float: none !important;
+        display: block;
+        margin: 10px auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+        display: block;
+        text-align: left;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        width: 100% !important;
+    }
+
+    input,
+    textarea {
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    button a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    body {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
 </style>
 
 <body>

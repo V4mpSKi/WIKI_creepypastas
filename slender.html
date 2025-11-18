@@ -120,19 +120,69 @@
 
         .terror {
             width: 100%;
+        }
 
+        .container {
+            width: 90%;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* ---------------- RESPONSIVIDADE ---------------- */
+
+        @media (max-width: 900px) {
+
+            body {
+                width: 100%;
+                margin: 0;
+            }
+
+            nav,
+            main,
+            aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img {
+                float: none;
+                display: block;
+                margin: auto;
+                padding: 10px 0;
+            }
+
+            figure img {
+                width: 60%;
+            }
+
+            p img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red;
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
+
     <header>
         <figure>
             <img src="s rosto (25).jpg" alt="">
-
         </figure>
         <h1>𝑺𝑳𝑬𝑵𝑫𝑬𝑹𝑴𝑨𝑵</h1>
     </header>
@@ -140,11 +190,12 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "slenderman"</h1>
+
         <p>O Slender Man, também escrito como criatura humanoide, é o principal antagonista titular do mito de mesmo
             nome.
 
@@ -165,13 +216,14 @@
             web. As motivações de Slender Man variam dependendo da versão, mas o original o tem como um monstro que
             despreza a humanidade e tem prazer em torturá-los sadicamente antes de devorá-los. Um pequeno grupo de
             pessoas acredita que ele é real e relatou avistamentos de diversos locais.</p>
+
         <img class="terror" src="corpo (26).jpg" alt="detalhe interno">
     </main>
+
     <aside>
+
         <article>
-
             <h2>alguns de seus nome</h2>
-
             <p>
                 Slender Man
                 Slenderman
@@ -228,180 +280,182 @@
                 Sujeito 87-Z
             </p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
 
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostar menos</button>
 
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Oninesciência
-                    Onisciência
-                    Onilinguismo
-                    Onicompetência
-                    Onipresença
-                    Metapotência
-                    Onipotência
-                    Onivastância
-                    Onifabricação
-                    "Slenderwalking" (aparecendo e desaparecendo à vontade)
-                    Teletransporte
-                    Apêndices extras semelhantes a tentáculos
-                    Telepatia
-                    Apatia
-                    Hiperelasticidade
-                    Virocinese (como náusea e amnésia, comumente conhecida como "Slender Sickness")
-                    Mudança de forma
-                    Falsificação de identidade
-                    Limpeza de memória
-                    Causando instabilidade mental
-                    Visibilidade condicional
-                    Tangibilidade condicional
-                    Perceptibilidade condicional
-                    Invisibilidade seletiva
-                    Intangibilidade seletiva
-                    Imperceptibilidade seletiva
-                    Manipulação quântica
-                    Manipulação empática
-                    Manipulação do plot
-                    Manipulação de dados
-                    Manipulação da informação
-                    Manipulação da internet
-                    Manipulação de GPS
-                    Manipulação da realidade
-                    Substituição da realidade
-                    Hipnose
-                    Distorção de vídeo e áudio
-                    Pirocinese
-                    Eletrocinese
-                    Manipulação de radiação
-                    Manipulação nuclear
-                    Manipulação de bactérias
-                    Manipulação de patógenos
-                    Manipulação de toxinas
-                    Manipulação do álcool
-                    Manipulação das drogas
-                    Regeneração instantânea
-                    Prolongamento da morte
-                    Redução da dor
-                    Manipulação do dia e noite
-                    Manipulação da adrenalina
-                    Manipulação de morfina
-                    Manipulação de remédios
-                    Manipulação da medicina
-                    Telecinese
-                    Termocinese
-                    Possesão
-                    Ressurreição
-                    Tecnopatia
-                    Sonipatia
-                    Criação de universo/dimensão
-                    Aura do desespero
-                    Alteração de tamanho
-                    Força imensa
-                    Destreza imensa
-                    Resistência imensa
-                    Durabilidade imensa
-                    Velocidade imensa
-                    Agilidade imensa
-                    Mobilidade imensa
-                    Flexibilidade imensa
-                    Recuperação imensa
-                    Stamina infinita
-                    Vigor infinito
-                    Manipulação do espaço tempo
-                    Viagem no tempo
-                    Viagem interdimensonal
-                    Umbracinese (manipulação da escuridão e falta de luz)
-                    Hidrocinese (manipulação da água)
-                    Alteração do tempo
-                    Essocinese
-                    Duplicação
-                    Manipulação de transtornos mentais
-                    Geocinese (manipulação da terra)
-                    Transfiguração
-                    Projeção de energia
-                    Acausalidade
-                    Manipulação da mente
-                    Manipulação de probabilidade
-                    Furtividade sobrenatural
-                    Camuflagem sobrenatural
-                    Evasão sobrenatural
-                    Exatidão sobrenatural
-                    Precisão sobrenatural
-                    Manipulação de energia nuclear
-                    Manipulação do vazio
-                    Manipulação da personalidade
-                    Manipulação da emoção
-                    Manipulação do comportamento
-                    Manipulação da percepção
-                    Manipulação do amor
-                    Manipulação da dor e sofrimento
-                    Consebição de poderes
-                    Natureza camaleônica
-                    Mutação
-                    Corrupção
-                    Garras afiadas
-                    Imortalidade absoluta
-                    Manipulação da química
-                    Manipulação de energia
-                    Manipulação de luz
-                    Manipulação do fogo azul
-                    Manipulação do fogo ácido
-                    Manipulação do fogo infernal
-                    Transformação
-                    Controle do comprimento do corpo
-                    Gigantoficação
-                    Controle mental
-                    Manipulação da tinta
-                    Manipulação da vida e morte
-                    Manipulação da imortalidade
-                    Manipulação do universo
-                    Manipulação das dimensões de bolso
-                    Manipulação cósmica
-                    Manipulação de dimensões
-                    Manipulação da história
-                    Manipulação do enredo
-                    Manipulação sagrada
-                    Manipulação da atmosfera
-                    Manipulação de comida
-                    Manipulação do clima
-                    Manipulação da temperatura
-                    Manipulação da lei
-                    Manipulação da ordem
-                    Manipulação da lógica
-                    Manipulação dos órgãos
-                    Manipulação das regras
-                    Manipulação da impossibilidade
-                    Manipulação da probabilidade
-                    Manipulação da gravidez
-                    Manipulação da gravidade
-                    Completamente invulnerável as leis da física</p>
-                <script>
-                    function mostrar() {
-                        document.getElementById("texto").style.display = "block"
-                    }
-                    function esconder() {
-                        document.getElementById("texto").style.display = "none";
-                    }
-                </script>
-            </body>
+            <p id="texto" style="display: none;">
+                Oninesciência
+                Onisciência
+                Onilinguismo
+                Onicompetência
+                Onipresença
+                Metapotência
+                Onipotência
+                Onivastância
+                Onifabricação
+                "Slenderwalking" (aparecendo e desaparecendo à vontade)
+                Teletransporte
+                Apêndices extras semelhantes a tentáculos
+                Telepatia
+                Apatia
+                Hiperelasticidade
+                Virocinese (como náusea e amnésia, comumente conhecida como "Slender Sickness")
+                Mudança de forma
+                Falsificação de identidade
+                Limpeza de memória
+                Causando instabilidade mental
+                Visibilidade condicional
+                Tangibilidade condicional
+                Perceptibilidade condicional
+                Invisibilidade seletiva
+                Intangibilidade seletiva
+                Imperceptibilidade seletiva
+                Manipulação quântica
+                Manipulação empática
+                Manipulação do plot
+                Manipulação de dados
+                Manipulação da informação
+                Manipulação da internet
+                Manipulação de GPS
+                Manipulação da realidade
+                Substituição da realidade
+                Hipnose
+                Distorção de vídeo e áudio
+                Pirocinese
+                Eletrocinese
+                Manipulação de radiação
+                Manipulação nuclear
+                Manipulação de bactérias
+                Manipulação de patógenos
+                Manipulação de toxinas
+                Manipulação do álcool
+                Manipulação das drogas
+                Regeneração instantânea
+                Prolongamento da morte
+                Redução da dor
+                Manipulação do dia e noite
+                Manipulação da adrenalina
+                Manipulação de morfina
+                Manipulação de remédios
+                Manipulação da medicina
+                Telecinese
+                Termocinese
+                Possesão
+                Ressurreição
+                Tecnopatia
+                Sonipatia
+                Criação de universo/dimensão
+                Aura do desespero
+                Alteração de tamanho
+                Força imensa
+                Destreza imensa
+                Resistência imensa
+                Durabilidade imensa
+                Velocidade imensa
+                Agilidade imensa
+                Mobilidade imensa
+                Flexibilidade imensa
+                Recuperação imensa
+                Stamina infinita
+                Vigor infinito
+                Manipulação do espaço tempo
+                Viagem no tempo
+                Viagem interdimensonal
+                Umbracinese (manipulação da escuridão e falta de luz)
+                Hidrocinese (manipulação da água)
+                Alteração do tempo
+                Essocinese
+                Duplicação
+                Manipulação de transtornos mentais
+                Geocinese (manipulação da terra)
+                Transfiguração
+                Projeção de energia
+                Acausalidade
+                Manipulação da mente
+                Manipulação de probabilidade
+                Furtividade sobrenatural
+                Camuflagem sobrenatural
+                Evasão sobrenatural
+                Exatidão sobrenatural
+                Precisão sobrenatural
+                Manipulação de energia nuclear
+                Manipulação do vazio
+                Manipulação da personalidade
+                Manipulação da emoção
+                Manipulação do comportamento
+                Manipulação da percepção
+                Manipulação do amor
+                Manipulação da dor e sofrimento
+                Consebição de poderes
+                Natureza camaleônica
+                Mutação
+                Corrupção
+                Garras afiadas
+                Imortalidade absoluta
+                Manipulação da química
+                Manipulação de energia
+                Manipulação de luz
+                Manipulação do fogo azul
+                Manipulação do fogo ácido
+                Manipulação do fogo infernal
+                Transformação
+                Controle do comprimento do corpo
+                Gigantoficação
+                Controle mental
+                Manipulação da tinta
+                Manipulação da vida e morte
+                Manipulação da imortalidade
+                Manipulação do universo
+                Manipulação das dimensões de bolso
+                Manipulação cósmica
+                Manipulação de dimensões
+                Manipulação da história
+                Manipulação do enredo
+                Manipulação sagrada
+                Manipulação da atmosfera
+                Manipulação de comida
+                Manipulação do clima
+                Manipulação da temperatura
+                Manipulação da lei
+                Manipulação da ordem
+                Manipulação da lógica
+                Manipulação dos órgãos
+                Manipulação das regras
+                Manipulação da impossibilidade
+                Manipulação da probabilidade
+                Manipulação da gravidez
+                Manipulação da gravidade
+                Completamente invulnerável as leis da física
+            </p>
 
+            <script>
+                function mostrar() {
+                    document.getElementById("texto").style.display = "block";
+                }
+                function esconder() {
+                    document.getElementById("texto").style.display = "none";
+                }
+            </script>
 
         </article>
+
         <article>
             <h2>metas</h2>
-
-            <p>Mate todos que se opõem a ele.
+            <p>
+                Mate todos que se opõem a ele.
                 Sequestre e mate crianças.
                 Traga o mal e as trevas para o mundo.
-                Influenciando as pessoas a se tornarem seus representantes</p>
+                Influenciando as pessoas a se tornarem seus representantes
+            </p>
         </article>
+
         <article>
             <h2>crimes</h2>
-
             <p>
-
                 Assassinato em massa (incluindo infanticídio e familicidio)
                 Perseguição em série
                 Vigilantismo em massa
@@ -420,25 +474,27 @@
                 Auxílio e cúmplice
                 Abuso em massa (incluindo pedófilia, estupro e abuso de poder)
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
             <p>
                 Destruidor de Mentes Enigmático
                 <a href=""></a>
             </p>
-
         </article>
+
     </aside>
+
     <footer>
         <p>𝑺𝑳𝑬𝑵𝑫𝑬𝑹𝑴𝑨𝑵</p>
     </footer>
-<button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+
+    <button style="background-color: red;">
+        <a href="menu.html" style="text-decoration: none;">voltar</a>
+    </button>
 
 </body>
 
 </html>
+

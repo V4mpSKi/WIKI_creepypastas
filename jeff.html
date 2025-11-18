@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jeff the killer</title>
+
     <style>
         body {
             width: 1000px;
@@ -97,19 +98,6 @@
             margin-bottom: 0;
         }
 
-        .horario {
-            margin-top: 0;
-            text-align: right;
-            color: #d62ad4;
-        }
-
-        .link {
-            display: block;
-            color: red;
-            text-align: right;
-            text-decoration: none;
-        }
-
         p img {
             width: 300px;
         }
@@ -120,20 +108,61 @@
 
         .terror {
             width: 100%;
+        }
 
+        /* ===== RESPONSIVIDADE ===== */
+
+        @media (max-width: 900px) {
+
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav,
+            main,
+            aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img {
+                float: none;
+                display: block;
+                margin: auto;
+                padding: 10px 0;
+            }
+
+            figure img {
+                width: 60%;
+            }
+
+            p img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red; /* você colocou, mantido */
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
+
     <header>
         <figure>
-
             <img src="Mídia (13).jpg" alt="">
-
         </figure>
         <h1>𝑱𝑬𝑭𝑭 𝑻𝑯𝑬 𝑲𝑰𝑳𝑳𝑬𝑹</h1>
     </header>
@@ -141,9 +170,9 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "jeff"</h1>
         <p>Jeffrey Alan Woods (conhecido na história original como Jeffrey C. Hodek ) e posteriormente como Jeff the
@@ -155,103 +184,85 @@
             aparência. Seus desejos homicidas insaciáveis ​​e o trauma físico sofrido o levam à loucura, conduzindo-o
             por um caminho sombrio como um enigmático assassino em série.
 
-            Ele também serve como o principal antagonista titular das histórias de Jane The Killer, de Pastastalker64 .
+            Ele também serve como o principal antagonista titular das histórias de Jane The Killer, de Pastastalker64.
         </p>
+
         <img class="terror" src="Mídia (14).jpg" alt="detalhe interno">
     </main>
+
     <aside>
         <article>
-
             <h2>alguns de seus nome</h2>
-
             <p>
-                Jeff the Killer
-                Jeff Woods
-                Jeffery
-                Jeffrey the Killer
-                Ominous Unknown Killer
+                Jeff the Killer<br>
+                Jeff Woods<br>
+                Jeffery<br>
+                Jeffrey the Killer<br>
+                Ominous Unknown Killer<br>
                 Joker-Reject
-
             </p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
 
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostar menos</button>
 
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Inteligência de alto nível;
-                    Metodologia de assassinato
-                    ; Habilidade com facas;
-                    Intenção de matar
-                    ; Instinto assassino
-                    ; Ativação adrenal;
-                    Maestria em manipulação;
-                    Maestria em combate desarmado;
-                    Sentidos
-                    sobre-humanos; Furtividade sobre-humana
-                    ; Supressão do sono ; Precisão sobre-humana ; Saúde sobre-humana (possivelmente) ; Recuperação
-                    sobre-humana ; Enorme tolerância à dor ; Força sobre-humana ; Durabilidade sobre-humana ; Velocidade
-                    sobre-humana; Reflexos sobre -humanos; Agilidade sobre-humana; Vigor sobre-humano ; Flexibilidade
-                    sobre-humana</p>
-                <script>
-                    function mostrar() {
-                        document.getElementById("texto").style.display = "block"
-                    }
-                    function esconder() {
-                        document.getElementById("texto").style.display = "none";
-                    }
-                </script>
-            </body>
-
+            <p id="texto" style="display: none;">
+                Inteligência de alto nível; Metodologia de assassinato; Habilidade com facas; Intenção de matar;
+                Instinto assassino; Ativação adrenal; Maestria em manipulação; Maestria em combate desarmado; Sentidos
+                sobre-humanos; Furtividade sobre-humana; Supressão do sono; Precisão sobre-humana; Saúde sobre-humana
+                (possivelmente); Recuperação sobre-humana; Enorme tolerância à dor; Força sobre-humana; Durabilidade
+                sobre-humana; Velocidade sobre-humana; Reflexos sobre-humanos; Agilidade sobre-humana; Vigor
+                sobre-humano; Flexibilidade sobre-humana.
+            </p>
 
         </article>
+
         <article>
             <h2>metas</h2>
 
-            <p>Acabar com o máximo de vidas possível (em andamento; concluído até o momento) .
-                Matar Randy, Troy e Keith pelo que fizeram a ele (conseguido com Randy, presumivelmente também com Troy
-                e Keith) .
-                Matar sua família (conseguido; embora o paradeiro de Liu seja desconhecido).
-                Matar o menino.
-                Matar o pai do menino (ambas as tentativas falharam) .
-                Fugir da polícia (conseguido) .
-               
+            <p>
+                Acabar com o máximo de vidas possível (em andamento; concluído até o momento).<br>
+                Matar Randy, Troy e Keith pelo que fizeram a ele.<br>
+                Matar sua família (Liu possivelmente vivo).<br>
+                Matar o menino e o pai do menino (ambas falharam).<br>
+                Fugir da polícia (conseguido).
             </p>
         </article>
+
         <article>
             <h2>crimes</h2>
 
             <p>
-                Assassinato em série
-                Tortura,
-                abuso psicológico
-                , agressão física,
-                perseguição
-                , invasão de domicílio, familicídio, incêndio
-                criminoso
-                <a href=""></a>
+                Assassinato em série, tortura, abuso psicológico, agressão física, perseguição, invasão de domicílio,
+                familicídio, incêndio criminoso.
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
-            <p>
-                Assassino em Série Psicótico
-                <a href=""></a>
-            </p>
-
+            <p>Assassino em Série Psicótico</p>
         </article>
     </aside>
+
     <footer>
         <p>𝑱𝑬𝑭𝑭 𝑻𝑯𝑬 𝑲𝑰𝑳𝑳𝑬𝑹</p>
     </footer>
-<button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+
+    <button style="background-color: red;">
+        <a href="menu.html" style="text-decoration: none; color: white;">voltar</a>
+    </button>
+
+    <script>
+        function mostrar() {
+            document.getElementById("texto").style.display = "block";
+        }
+        function esconder() {
+            document.getElementById("texto").style.display = "none";
+        }
+    </script>
 
 </body>
-
 </html>

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>𝑨𝑴</title>
+
     <style>
         body {
             width: 1000px;
@@ -120,20 +121,75 @@
 
         .terror {
             width: 100%;
+        }
 
+        /* Responsividade mantendo o layout ao máximo */
+        @media (max-width: 1100px) {
+            body {
+                width: 95%;
+                margin: auto;
+            }
+            main {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 900px) {
+            nav {
+                width: 100%;
+                float: none;
+                text-align: center;
+            }
+            nav ul li {
+                width: 100%;
+            }
+            main {
+                float: none;
+                width: 100%;
+                margin: 0;
+            }
+            aside {
+                float: none;
+                width: 100%;
+                margin-top: 20px;
+            }
+            main img {
+                float: none;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                width: 100%;
+            }
+            figure img {
+                width: 120px;
+            }
+            p img {
+                width: 100%;
+            }
+        }
+            /* Ajustes responsivos sem modificar sua estrutura */
+        @media (max-width: 900px) {
+            body { width: 100%; margin: 0 auto; }
+            main, aside, nav { float: none !important; width: 100% !important; margin: 0 !important; }
+            main img, .terror { width: 100% !important; float: none !important; margin: 10px 0 !important; }
+            nav ul li { width: 100% !important; text-align: center; }
+        }
+
+        @media (max-width: 600px) {
+            figure img { width: 120px !important; }
+            p img { width: 100% !important; }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
     <header>
         <figure>
             <img class=".am" src="Mídia (10).jpg" alt="">
-
-
         </figure>
         <h1>𝑨𝑴</h1>
     </header>
@@ -141,9 +197,9 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "AM"</h1>
         <p>O Allied Mastercomputer , mais conhecido simplesmente como AM , é o principal antagonista do lendário conto
@@ -159,103 +215,73 @@
             Ellison .</p>
         <img class="terror" src="Mídia (9).jpg" alt="detalhe interno">
     </main>
+
     <aside>
         <article>
-
             <h2>alguns de seus nome</h2>
-
-            <p>
-                Supercomputador militar
-                Atormentador da humanidade
-            </p>
+            <p>Supercomputador militar<br>Atormentador da humanidade</p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
-
-
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Omnimalevolência
-                    Controle absoluto sobre o próprio complexo e a realidade interior (virtual ou não).
-                    Inteligência incrível.
-                    Conhecimento de toda a história e sociedade humanas.
-                    Domínio da manipulação.
-                    Métodos de tortura.
-                    Telepatia
-                    . Cronocinese.
-                    Absorção de dados
-                    . Manipulação da realidade.
-                    Vastos recursos e tecnologia.
-                    Distorção espacial.
-                    Manipulação da vida.
-                    Criação de dimensões de bolso.
-                    <script>
-                        function mostrar() {
-                            document.getElementById("texto").style.display = "block"
-                        }
-                        function esconder() {
-                            document.getElementById("texto").style.display = "none";
-                        }
-                    </script>
-            </body>
-
-
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostrar menos</button>
+            <p id="texto" style="display: none;">Omnimalevolência
+                Controle absoluto sobre o próprio complexo e a realidade interior (virtual ou não).
+                Inteligência incrível.
+                Conhecimento de toda a história e sociedade humanas.
+                Domínio da manipulação.
+                Métodos de tortura.
+                Telepatia.
+                Cronocinese.
+                Absorção de dados.
+                Manipulação da realidade.
+                Vastos recursos e tecnologia.
+                Distorção espacial.
+                Manipulação da vida.
+                Criação de dimensões de bolso.
+            </p>
         </article>
+
         <article>
             <h2>metas</h2>
-
             <p>Vingue-se da humanidade por sua criação cometendo genocídio contra quase toda a humanidade.
-                Submeta os últimos humanos sobreviventes à destruição e tortura eternas por puro despeito (todas as
-                versões; ambas tiveram sucesso) .
-                Resgate a população humana sobrevivente da lua para tortura futura (videogame; dependendo do final) .
-              
+                Submeta os últimos humanos sobreviventes à destruição e tortura eternas por puro despeito.
+                Resgate a população humana sobrevivente da lua para tortura futura.
             </p>
         </article>
+
         <article>
             <h2>crimes</h2>
-
-            <p>
-                Genocídio,
-                ecocídio,
-                assassinato em massa
-                , tortura em massa,
-                escravidão,
-                crimes contra a humanidade,
-                abuso psicológico,
-                transmutação forçada
-                , inanição,
-                mutilação
-                , tentativa de estupro por procuração,
-                sequestro,
-                dominação mundial
-                , prisão ilegal
-                , incitação
-                , conspiração,
-                crueldade contra animais.
-                Cenas excluídas:
-                canibalismo forçado,
-                infanticídio por procuração.
-                <a href=""></a>
+            <p>Genocídio, ecocídio, assassinato em massa, tortura em massa, escravidão, crimes contra a humanidade,
+                abuso psicológico, transmutação forçada, inanição, mutilação, tentativa de estupro por procuração,
+                sequestro, dominação mundial, prisão ilegal, incitação, conspiração, crueldade contra animais.
+                Cenas excluídas: canibalismo forçado, infanticídio por procuração.
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
-            <p>
-                Torturador Misantropo
-                <a href=""></a>
-            </p>
-
+            <p>Torturador Misantropo</p>
         </article>
     </aside>
+
     <footer>
         <p>𝑨𝑴</p>
     </footer>
-<button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+
+    <button style="background-color: red;">
+        <a href="menu.html" style="text-decoration: none; color: white;">voltar</a>
+    </button>
+
+    <script>
+        function mostrar() {
+            document.getElementById("texto").style.display = "block";
+        }
+        function esconder() {
+            document.getElementById("texto").style.display = "none";
+        }
+    </script>
 
 </body>
 

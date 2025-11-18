@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta viewport="width=device-width, initial-scale=1.0">
     <title>the locust</title>
+
     <style>
         body {
             width: 1000px;
@@ -120,19 +121,67 @@
 
         .terror {
             width: 100%;
+        }
 
+        /* ==========================
+           RESPONSIVIDADE
+        ===========================*/
+
+        @media (max-width: 900px) {
+
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav,
+            main,
+            aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            main {
+                width: 100%;
+                padding: 10px;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img,
+            .terror {
+                width: 100%;
+                float: none;
+                margin: auto;
+            }
+
+            figure img {
+                width: 60%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: #ffffff;
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
     <header>
         <figure>
             <img src="Mídia (20).jpg" alt="">
-
         </figure>
         <h1>𝑻𝑯𝑬 𝑳𝑶𝑪𝑼𝑺𝑻</h1>
     </header>
@@ -140,11 +189,12 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "o gafanhoto"</h1>
+
         <p>O Gafanhoto, também conhecido como O Tambor, é o principal antagonista da série de terror analógico 'TOE' (
             The Organator Enterprise/Smilehood) do Dr. Nowhere .
 
@@ -153,79 +203,77 @@
 
             Eles têm pouca prática em falar com estranhos e, mesmo que escrevam incorretamente, isso os leva a ameaçar
             suas vítimas de forma gananciosa e sem qualquer motivo.</p>
+
         <img class="terror" src="Mídia (19).jpg" alt="detalhe interno">
     </main>
+
     <aside>
         <article>
-
             <h2>alguns de seus nome</h2>
-
             <p>
-                O gafanhoto
-O
-Tambor do Órgão
+                O gafanhoto<br>
+                O<br>
+                Tambor do Órgão
             </p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
 
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostar menos</button>
 
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Entrando no mundo real por meio de videochamadas no PenPalace
-Guerra psicológica,
-força sobrenatural,
-tamanho grande.</p>
-                <script>
-                    function mostrar() {
-                        document.getElementById("texto").style.display = "block"
-                    }
-                    function esconder() {
-                        document.getElementById("texto").style.display = "none";
-                    }
-                </script>
-            </body>
+            <p id="texto" style="display: none;">
+                Entrando no mundo real por meio de videochamadas no PenPalace<br>
+                Guerra psicológica,<br>
+                força sobrenatural,<br>
+                tamanho grande.
+            </p>
 
-
+            <script>
+                function mostrar() {
+                    document.getElementById("texto").style.display = "block"
+                }
+                function esconder() {
+                    document.getElementById("texto").style.display = "none";
+                }
+            </script>
         </article>
+
         <article>
             <h2>metas</h2>
-
             <p>Entrar em casas para comer pessoas para sobreviver (implícito) .
-Faça um amigo (em andamento) .</a>
+                Faça um amigo (em andamento) .
             </p>
         </article>
+
         <article>
             <h2>crimes</h2>
-
             <p>
-               Assassinato
-Perseguição
-, canibalismo (implícito)
-, falsificação de identidade,
-assédio ,
-tortura psicológica,
-mutilação
-, invasão de domicílio.
+                Assassinato<br>
+                Perseguição,<br>
+                canibalismo (implícito),<br>
+                falsificação de identidade,<br>
+                assédio,<br>
+                tortura psicológica,<br>
+                mutilação,<br>
+                invasão de domicílio.
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
-            <p>
-                Enigmático Devorador de Homens
-            </p>
-
+            <p>Enigmático Devorador de Homens</p>
         </article>
     </aside>
+
     <footer>
         <p>𝑻𝑯𝑬 𝑳𝑶𝑪𝑼𝑺𝑻</p>
     </footer>
+
     <button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+        <a href="menu.html" style="text-decoration: none; color: white;">voltar</a>
+    </button>
 
 </body>
 

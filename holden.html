@@ -120,19 +120,56 @@
 
         .terror {
             width: 100%;
+        }
 
+        /* Responsividade */
+        @media (max-width: 900px) {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav, main, aside {
+                float: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            main img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+
+            figure img {
+                width: 60%;
+            }
+
+            p img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red; /* você colocou isso, mantive */
+            }
         }
     </style>
 </head>
-<style>
-
-</style>
 
 <body>
     <header>
         <figure>
             <img src="Mídia (18).jpg" alt="">
-
         </figure>
         <h1>𝙅𝙐𝘿𝙂𝙀 𝙃𝙊𝙇𝘿𝙀𝙉</h1>
     </header>
@@ -140,9 +177,9 @@
     <nav>
         <ul>
             <link rel="stylesheet" href="">
-
         </ul>
     </nav>
+
     <main>
         <h1>um pouco de "Juiz"</h1>
         <p>O Juiz Holden , também conhecido simplesmente como o Juiz , é o principal antagonista do épico romance de
@@ -160,30 +197,30 @@
             Holden também exerce uma espécie de poder enigmático sobre as pessoas ao seu redor, já que todos desejam
             atirar nele, mas, de alguma forma, se sentem compelidos a não fazê-lo. No fim, os objetivos de Holden são
             verdadeiramente desconhecidos, mas sua sobrevivência no final do romance indica que ele planeja continuar
-            matando pela eternidade.</p>
+            matando pela eternidade.
+        </p>
         <img class="terror" src="Mídia (17).jpg" alt="detalhe interno">
     </main>
+
     <aside>
         <article>
-
             <h2>alguns de seus nome</h2>
-
             <p>
-                Juiz Holden
-                O Juiz
-                , o Diabo,
+                Juiz Holden<br>
+                O Juiz<br>
+                o Diabo,<br>
                 o Grande Gênio Ponderoso
-
             </p>
         </article>
+
         <article>
             <h2>seus podere/habilidades</h2>
 
+            <button onclick="mostrar()">mostrar mais</button>
+            <button onclick="esconder()">mostar menos</button>
 
-            <body>
-                <button onclick="mostrar()">mostrar mais</button>
-                <button onclick="esconder()">mostar menos</button>
-                <p id="texto" style="display: none;">Inteligência de nível genial
+            <p id="texto" style="display: none;">
+                Inteligência de nível genial
                     Multilinguismo (fluente em inglês, espanhol, holandês, alemão e dialetos nativos americanos)
                     Domínio da manipulação e corrupção
                     Domínio da intimidação
@@ -210,35 +247,34 @@
                     ao alvo
                     Velocidade humana máxima
                     Agilidade
-                    Não-dualidade</p>
-                <script>
-                    function mostrar() {
-                        document.getElementById("texto").style.display = "block"
-                    }
-                    function esconder() {
-                        document.getElementById("texto").style.display = "none";
-                    }
-                </script>
-            </body>
-
-
+                    Não-dualidade
+            </p>
         </article>
+
+        <script>
+            function mostrar() {
+                document.getElementById("texto").style.display = "block";
+            }
+            function esconder() {
+                document.getElementById("texto").style.display = "none";
+            }
+        </script>
+
         <article>
             <h2>metas</h2>
-
-            <p>Matar os nativos americanos.
+            <p>
+                Matar os nativos americanos.
                 Espalhar e impor sua filosofia.
                 Corromper ainda mais a já maligna Gangue Glanton.
                 Sair impune de todos os seus crimes.
                 (tudo com sucesso)
                 Corromper o Garoto ou matá-lo de outra forma (presumivelmente com sucesso) .
                 Tornar-se soberano da Terra (desconhecido; possivelmente com sucesso) .
-               
             </p>
         </article>
+
         <article>
             <h2>crimes</h2>
-
             <p>
                 Genocídio
                 Assassinato em massa
@@ -258,26 +294,22 @@
                 Extorsão Suborno Roubo Conspiração Perturbação da paz Sequestro Obstrução da justiça Roubo Incêndio
                 criminoso Exibicionismo Incriminação Escravidão Maléfico (fortemente implícito) Dominação mundial
                 (implícita)
-                <a href=""></a>
             </p>
-
         </article>
+
         <article>
             <h2>tipo</h2>
-
-            <p>
-               Niilista Satânico
-                <a href=""></a>
-            </p>
-
+            <p>Niilista Satânico</p>
         </article>
     </aside>
+
     <footer>
         <p>𝙅𝙐𝘿𝙂𝙀 𝙃𝙊𝙇𝘿𝙀𝙉</p>
     </footer>
-<button style="background-color: red;">
-            <a href="menu.html" style="text-decoration: none;">voltar</a>
-        </button>
+
+    <button style="background-color: red;">
+        <a href="menu.html" style="text-decoration: none;">voltar</a>
+    </button>
 
 </body>
 

@@ -5,94 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<style>
- body{
+
+    <style>
+        body {
             background-image: url(star\ \(28\).jpg);
         }
-        h2{
+
+        h2 {
             color: aliceblue;
         }
-        img{
+
+        img {
             width: 300px;
         }
-</style>
+
+        /* container geral para permitir alinhamento sem quebrar tudo */
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        /* remover flex de TODOS os divs (isso quebrava tudo) */
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* ajuste para telas menores */
+        @media (max-width: 900px) {
+            img {
+                display: block;
+                margin: auto;
+                width: 70%;
+            }
+
+            button {
+                display: block;
+                margin: 10px auto;
+            }
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background: red; /* você colocou, mantive */
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <h2> THE BOILED ONE </h2>
-   
-      
-       
-            <img src="Mídia (2).jpg" alt="">
-           <button style="background-color: red;">
-       <a href="pi.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-       </button>
 
-        <h2>THE LOCUST</h2>
-  <img src="Mídia (19).jpg" alt="">
+    <div class="container">
+
+        <h2> THE BOILED ONE </h2>
+        <img src="Mídia (2).jpg" alt="">
         <button style="background-color: red;">
-          
-            <a href="thelocust.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>THE SMILE DOG</h2>
- <img src="Mídia (15).jpg" alt="">
-            <button style="background-color: red;">
-           
-            <a href="smiledog.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>AM</h2>
- <img src="Mídia (9).jpg" alt="">
-            <button style="background-color: red;">
-           
-            <a href="AM.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>JEFF THE KILLER</h2>
-   <img src="Mídia (13).jpg" alt="">
-            <button style="background-color: red;">
-            
-            <a href="jeff.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>JUDGE HOLDEN</h2>
-<img src="Mídia (17).jpg" alt="">
-            <button style="background-color: red;">
-            
-            <a href="holden.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>SONIC E.X.E</h2>
-<img src="fefnefuuj (21).jpg" alt="">
-            <button style="background-color: red;">
-            
-            <a href="culpa.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>JACK RISONHO</h2>
-  <img src="jack fundo p (23).jpg" alt="">
-            <button style="background-color: red;">
-          
-            <a href="jack.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-            <h2>SLENDERMAN</h2>
-  <img src="s rosto (25).jpg" alt="">
-            <button style="background-color: red;">
-          
-        <a href="slender.html" class="btn btn-light btn-lg">acessar creepypasta</a>
-</button>
-
-        <div>
- <button style="background-color: red;">
-            <a href="index.html" style="text-decoration: none;">voltar</a>
+            <a href="pi.html" class="btn btn-light btn-lg">acessar creepypasta</a>
         </button>
 
+        <h2>THE LOCUST</h2>
+        <img src="Mídia (19).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="thelocust.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>THE SMILE DOG</h2>
+        <img src="Mídia (15).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="smiledog.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>AM</h2>
+        <img src="Mídia (9).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="AM.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>JEFF THE KILLER</h2>
+        <img src="Mídia (13).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="jeff.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>JUDGE HOLDEN</h2>
+        <img src="Mídia (17).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="holden.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>SONIC E.X.E</h2>
+        <img src="fefnefuuj (21).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="culpa.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>JACK RISONHO</h2>
+        <img src="jack fundo p (23).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="jack.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <h2>SLENDERMAN</h2>
+        <img src="s rosto (25).jpg" alt="">
+        <button style="background-color: red;">
+            <a href="slender.html" class="btn btn-light btn-lg">acessar creepypasta</a>
+        </button>
+
+        <div>
+            <button style="background-color: red;">
+                <a href="index.html" style="text-decoration: none;">voltar</a>
+            </button>
         </div>
-        
-       
-    
+
+    </div>
+
 </body>
 
 </html>

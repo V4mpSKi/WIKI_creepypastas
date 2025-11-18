@@ -122,6 +122,75 @@
             width: 100%;
 
         }
+        /* RESPONSIVIDADE — mantém seu layout original SEM modificar nada */
+@media (max-width: 900px) {
+
+    body {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    main, aside, nav {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    main img,
+    .terror {
+        width: 100% !important;
+        float: none !important;
+        padding: 0 !important;
+        margin: 10px 0 !important;
+    }
+
+    figure img {
+        width: 200px !important;
+        display: block;
+        margin: 10px auto;
+    }
+
+    nav ul li {
+        width: 100% !important;
+        text-align: center;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+
+    button {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    button a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        padding: 5px;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    main h1 {
+        font-size: 1.1em;
+    }
+
+    p img {
+        width: 100% !important;
+    }
+}
+
     </style>
 </head>
 <style>
