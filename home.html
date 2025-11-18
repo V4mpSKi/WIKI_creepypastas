@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page com Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        /* Pequeno texto personalizado */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #8d0f0f;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            border: none;
+            border-radius: 50%;
+            background-color: #fdbd0d;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 999;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+ 
+        }
+         body{
+            background-image: url(star\ \(28\).jpg);
+        }
+        h2{
+            color: aliceblue;
+        }
+        p{
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <header class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Creepypastas|WIKI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="menu.html">entrar anonimo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                     <li class="nav-item"><a class="nav-link" href="forum.html">forum</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="text-light text-center" style="background-color: #8d0f0f;">
+        <div class="container">
+            <h1>Bem-vindo à nossa página</h1>
+            <p class="lead mb-4">faça seu cadastro a baixo ou entre anonimo</p>
+            <a href="cadastro.html" class="btn btn-light btn-lg">menu</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section>
+        <div class="container text-center">
+            <h2 class="mb-4 text-primaty fw-bold">Sobre Mim</h2>
+            <p class="lead">Criei esse site porque gosto desses assuntos desde quando eu era menor, quero dar
+                visibilidade a essas
+                lendas, e fazer esse site deu nostalgia</p>
+
+        </div>
+        <!-- serviços -->
+    </section>
+
+    <!-- Contato -->
+
+    <!-- botão topo -->
+    <button id="topBtn"><i class="bi bi-balloon-fill"></i></button>
+    <!-- Rodapé -->
+    <div>
+        <h2>Propósito do Site Wiki de Creepypastas</h2>
+        <p>
+
+            O principal propósito do site Wiki de Creepypastas é reunir, preservar e compartilhar histórias de terror
+            que nasceram e cresceram na internet. Ele serve como um arquivo digital de lendas modernas, onde contos
+            assustadores, relatos sobrenaturais e mitos urbanos ganham forma e são mantidos vivos pela comunidade.
+
+            Mais do que apenas um acervo, o site busca valorizar a criatividade coletiva, permitindo que autores, fãs e
+            curiosos colaborem na construção de um universo sombrio e sempre em expansão. Cada página funciona como uma
+            porta para o desconhecido — um lugar onde o medo, a curiosidade e a imaginação se misturam.
+
+            Além disso, o wiki cumpre um papel importante ao organizar e contextualizar essas histórias, ajudando
+            leitores a entenderem suas origens, inspirações e variações ao longo do tempo. Assim, o site não é apenas um
+            espaço para se assustar, mas também um registro cultural da maneira como o terror se manifesta na era
+            digital.
+
+            Em resumo, o Wiki de Creepypastas existe para guardar e expandir o legado das histórias que assombram a
+            internet, mantendo vivo o fascínio humano pelo mistério e pelo medo.
+        </p>
+   
+</body>
+
+</html>

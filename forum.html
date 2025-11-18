@@ -1,0 +1,36 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de Lendas da Internet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="FÓRUM DE LENDAS">FÓRUM DE LENDAS</h1>
+            <p class="subtitle">Compartilhe suas experiências e opiniões sobre os sites mais misteriosos da internet</p>
+        </header>
+ 
+        <div class="new-post-section">
+            <h2>Criar Nova Discussão</h2>
+            <form id="postForm">
+                <input type="text" id="postTitle" placeholder="Título da discussão..." required>
+                <textarea id="postContent" placeholder="Descreva o site ou lenda que você quer discutir..." required></textarea>
+                <input type="text" id="postAuthor" placeholder="Seu nome (opcional)">
+                <button type="submit">Publicar</button>
+            </form>
+        </div>
+ 
+        <div class="posts-container" id="postsContainer">
+            <!-- Posts serão adicionados aqui dinamicamente -->
+        </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
